@@ -1,0 +1,4 @@
+<resources>
+    <string name="inventory_title">Склад</string>
+    <string name="inventory_stock_format">Остаток: %.2f / Мин: %.2f</string>
+</resources>

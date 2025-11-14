@@ -1,0 +1,91 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.kapt'
+    id 'com.google.dagger.hilt.android'
+}
+android {
+    namespace 'com.avtomatorgovli'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.avtomatorgovli'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    buildFeatures {
+        compose true
+        buildConfig true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.15'
+    }
+    packagingOptions {
+        resources {
+            excludes += ['/META-INF/{AL2.0,LGPL2.1}']
+        }
+    }
+}
+
+dependencies {
+    implementation project(':core')
+    implementation project(':feature-auth')
+    implementation project(':feature-pos')
+    implementation project(':feature-products')
+    implementation project(':feature-inventory')
+    implementation project(':feature-purchases')
+    implementation project(':feature-customers')
+    implementation project(':feature-suppliers')
+    implementation project(':feature-reports')
+    implementation project(':feature-settings')
+    implementation project(':sync')
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.lifecycle.runtime.ktx
+    implementation libs.androidx.lifecycle.viewmodel
+    implementation libs.androidx.activity.compose
+    implementation platform(libs.androidx.compose.bom)
+    implementation libs.androidx.compose.ui
+    implementation libs.androidx.compose.ui.graphics
+    implementation libs.androidx.compose.ui.tooling.preview
+    implementation libs.androidx.compose.material3
+    implementation libs.androidx.compose.material.icons
+    implementation libs.androidx.navigation.compose
+    implementation libs.androidx.hilt.navigation.compose
+    implementation libs.androidx.hilt.work
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
+    kapt libs.androidx.hilt.compiler
+    implementation libs.accompanist.systemuicontroller
+    implementation libs.timber
+
+    debugImplementation libs.androidx.compose.ui.tooling
+
+    testImplementation libs.junit
+    testImplementation libs.coroutines.test
+    testImplementation libs.mockk
+}

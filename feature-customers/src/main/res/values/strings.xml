@@ -1,0 +1,4 @@
+<resources>
+    <string name="customers_title">Покупатели</string>
+    <string name="customers_points_format">Бонусы: %.1f</string>
+</resources>

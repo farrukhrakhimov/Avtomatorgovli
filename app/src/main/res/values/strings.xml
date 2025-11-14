@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Avtomator Govli</string>
+    <string name="dashboard_title">Главная панель</string>
+    <string name="dashboard_today_placeholder">Сегодняшние продажи появятся после первых чеков.</string>
+    <string name="dashboard_actions">Быстрые действия</string>
+    <string name="dashboard_open_pos">Открыть кассу</string>
+    <string name="dashboard_open_inventory">Склад</string>
+    <string name="dashboard_open_purchases">Новая закупка</string>
+    <string name="dashboard_open_suppliers">Поставщики</string>
+</resources>

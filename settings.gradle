@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Avtomatorgovli"
+include(
+    ":app",
+    ":core",
+    ":feature-auth",
+    ":feature-pos",
+    ":feature-products",
+    ":feature-inventory",
+    ":feature-purchases",
+    ":feature-customers",
+    ":feature-suppliers",
+    ":feature-reports",
+    ":feature-settings",
+    ":sync"
+)

@@ -1,0 +1,5 @@
+<resources>
+    <string name="settings_title">Настройки</string>
+    <string name="settings_store_name">Название магазина</string>
+    <string name="settings_save">Сохранить</string>
+</resources>

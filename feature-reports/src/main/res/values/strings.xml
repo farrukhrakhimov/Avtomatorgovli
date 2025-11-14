@@ -1,0 +1,9 @@
+<resources>
+    <string name="reports_title">Отчеты</string>
+    <string name="reports_today">Сегодня: %.2f ₽</string>
+    <string name="reports_week">Неделя: %.2f ₽</string>
+    <string name="reports_low_stock">Позиции ниже минимума: %1$d</string>
+    <string name="reports_last_sales">Последние продажи</string>
+    <string name="reports_receipt_number">Чек %1$s</string>
+    <string name="reports_receipt_total">Сумма: %.2f ₽</string>
+</resources>
