@@ -1,0 +1,8 @@
+<resources>
+    <string name="auth_welcome">Добро пожаловать</string>
+    <string name="auth_username">Логин</string>
+    <string name="auth_password">Пароль</string>
+    <string name="auth_login">Войти</string>
+    <string name="auth_error_empty">Введите логин и пароль</string>
+    <string name="auth_error_wrong">Неверные данные</string>
+</resources>

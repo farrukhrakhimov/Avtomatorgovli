@@ -1,0 +1,5 @@
+<resources>
+    <string name="purchases_title">Закупки</string>
+    <string name="purchases_hint">Создавайте документы поступления для пополнения склада. Нажмите кнопку ниже для примера.</string>
+    <string name="purchases_create_demo">Добавить демо закупку</string>
+</resources>

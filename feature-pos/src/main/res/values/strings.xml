@@ -1,0 +1,8 @@
+<resources>
+    <string name="pos_search_hint">Поиск или сканирование</string>
+    <string name="pos_subtotal">Сумма</string>
+    <string name="pos_tax">Налог</string>
+    <string name="pos_total">Итого</string>
+    <string name="pos_pay">Оплатить</string>
+    <string name="pos_price_format">%.2f ₽</string>
+</resources>

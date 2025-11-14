@@ -1,0 +1,9 @@
+<resources>
+    <string name="products_title">Товары</string>
+    <string name="products_total">Всего позиций: %1$d</string>
+    <string name="products_price_format">Цена: %.2f ₽</string>
+    <string name="products_stock_format">Остаток: %.2f</string>
+    <string name="products_new_name">Название нового товара</string>
+    <string name="products_new_price">Цена продажи</string>
+    <string name="products_add">Сохранить</string>
+</resources>
